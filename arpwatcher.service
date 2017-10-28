@@ -1,0 +1,9 @@
+[Unit]
+Description=ARP spoofing detector
+ 
+[Service]
+ExecStart=/usr/local/bin/arpwatcher.py -o /var/log/arpwatcher.log
+
+[Install]
+WantedBy=multi-user.target
+
